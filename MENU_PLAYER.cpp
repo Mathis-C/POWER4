@@ -10,15 +10,15 @@
 #include <QHBoxLayout>
 
 MENU_PLAYER::MENU_PLAYER(QWidget *parent) : QWidget(parent) {
+}
+
+void MENU_PLAYER:: start(){
 
 
     nbrJ = new QLabel (" SELECT NUMBERS OF PLAYERS ", this);
     TwoP = new QPushButton ("2 PLAYERS" , this);
     ThreeP = new QPushButton (" 3 PLAYERSY" , this);
     return1 = new QPushButton ( " Return " , this);
-
-   // QWidget *centralP = new QWidget(this);
-    //setCentralWidget(centralP);
 
     QHBoxLayout * titreP = new QHBoxLayout();
     titreP->addStretch();
@@ -45,5 +45,3 @@ MENU_PLAYER::MENU_PLAYER(QWidget *parent) : QWidget(parent) {
 
 
 }
-
-
