@@ -1,5 +1,7 @@
 #ifndef MENU_GRID_2_H
 #define MENU_GRID_2_H
+#include "play_2p_12.h"
+#include "play_2p_8.h"
 #include <QMainWindow>
 #include <QWidget>
 #include <QComboBox>
