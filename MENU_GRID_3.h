@@ -20,6 +20,8 @@ private:
     QLabel * tailletab;
     QPushButton * TAB1;
     QPushButton * TAB2;
+    QPushButton * Quit1;
+
 };
 
 #endif // MENU_GRID_3_H
