@@ -15,6 +15,7 @@ class MENU_PLAYER : public QWidget
 public:
 
     explicit MENU_PLAYER(QWidget *parent = nullptr);
+    void start();
 
 private:
 
