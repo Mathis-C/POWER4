@@ -61,9 +61,12 @@ POWER4::POWER4(QWidget *parent)
 
 }
 
-void POWER4::play()
-{
-    menuPlayer->show();
+void POWER4::play(){
+
+    MENU_PLAYER * jeu = new MENU_PLAYER;
+    jeu->show();
+    jeu -> start();
+
 }
 
 
