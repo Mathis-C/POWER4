@@ -1,11 +1,12 @@
 #include "menu_grid_2.h"
+#include "play_2p_12.h"
+#include "play_2p_8.h"
 #include "qobjectdefs.h"
 #include <QMainWindow>
 #include <QWidget>
 #include <QComboBox>
 #include <QPushButton>
 #include <QLabel>
-#include <QDoubleValidator>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 
@@ -20,7 +21,8 @@ void MENU_GRID_2:: tab2P(){
     Quit1 = new QPushButton ( " QUIT " , this);
 
     connect(Quit1, SIGNAL(clicked()), this, SLOT(close()));
-
+    connect(TAB1, SIGNAL(clicked()), this, SLOT(GRID_8()));
+    connect(TAB2, SIGNAL(clicked()), this, SLOT(GRID_12()));
 
     QHBoxLayout * titre = new QHBoxLayout();
     titre -> addStretch();
@@ -48,5 +50,22 @@ void MENU_GRID_2:: tab2P(){
 
 
 }
+
+void MENU_GRID_2:: GRID_8(){
+
+    P2_8 = new PLAY_2P_8;
+    P2_8 -> show();
+    P2_8 -> INTERFACE();
+
+}
+
+void MENU_GRID_2:: GRID_12(){
+
+    P2_12 = new PLAY_2P_12;
+    P2_12 -> show();
+    P2_12 -> INTERFACE();
+}
+
+
 
 
