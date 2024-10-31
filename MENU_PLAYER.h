@@ -16,13 +16,17 @@ public:
 
     explicit MENU_PLAYER(QWidget *parent = nullptr);
     void start();
+    void GRID_2P();
+    void GRID_3P();
 
 private:
 
     QLabel * nbrJ;
     QPushButton * TwoP;
     QPushButton *ThreeP;
-    QPushButton * return1;
+    QPushButton * Quit1;
+    MENU_GRID_2 *menu2P;
+    MENU_GRID_3 *menu3P;
 
 };
 
