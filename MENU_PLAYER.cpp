@@ -20,7 +20,7 @@ void MENU_PLAYER:: start(){
     TwoP = new QPushButton ("2 PLAYERS" , this);
     ThreeP = new QPushButton (" 3 PLAYERS" , this);
     Quit1 = new QPushButton ( " QUIT " , this);
-    
+
 
     connect(Quit1, SIGNAL(clicked()), this, SLOT(close()));
     connect(TwoP, SIGNAL(clicked()), this, SLOT(GRID_2P()));
@@ -69,6 +69,3 @@ void MENU_PLAYER:: GRID_3P(){
     menu3P -> tab3P();
 
 }
-
-
-
